@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        .navbar {
+            background-color: gold;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .image-container {
+            position: relative;
+            text-align: center;
+        }
+
+        .button {
+            position: absolute;
+            top: 93%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            background-color: black;
+            color: white;
+            font-size: 16px;
+            padding: 5px 24px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .button:hover {
+            background-color: white;
+            color: black; 
+        }
+
+        .contact-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .contact-container img {
+            margin-right: 20px;
+            width: 500px;
+        }
+
+        .title2 {
+            font-size: 24px;
+            border-bottom: 2px solid gold;
+        }
+
+        .footer {
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: gold;
+            color: black;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .image {
+            flex: 50%;
+        }
+
+        .text {
+            flex: 50%;
+        }
+
+        .title {
+            font-size: 24px;
+            border-bottom: 1px solid gold;
+        }
+
+        .tile {
+            background-color: white;
+            color: black;
+            padding: 20px;
+            margin: 10px;
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+        * {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+body {
+font-family: Helvetica, sans-serif;
+padding: 5%;
+text-align: center;
+font-size: 50;
+}
+.swiper {
+  width: 1200px;
+  height: 600px;
+}
+.swiper-slide img{
+  width:75%;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="main.html">Home</a>
+  <a href="services.html">Services</a>
+  <a href="request.html">Request a Quote</a>
+</div>
+
+<div class="image-container">
+    <img src="https://monstermetalbuilding.com/wp-content/uploads/2022/01/cropped-monster-metal-building-erectors-1-scaled-1.jpg" alt="Background Image" style="width:100%;">
+    <button class="button" onclick="location.href='request.html'">Request a Quote</button>
+</div>  
+<html>
+<head>
+	<title>Monster Metal</title>
+</head>
+<html>
+  <head>
+    <meta name=""viewport" content="width=device-width, initial-scale=1">
+    <title>Past projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>  
+  </head>
+  <body>
+    <div class="container">
+      <!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><img src="https://lh3.googleusercontent.com/p/AF1QipN6MnagCCXj-yUet4hQ-qiw8aaSRnMMQfsasxw3=s680-w680-h510"></div>
+    <div class="swiper-slide"><img src="https://lh3.googleusercontent.com/p/AF1QipOadBs9hDE96j9Rr63LQrDqkwlk7ZunUPfvGJOF=s680-w680-h510"></div>
+    <div class="swiper-slide"><img src="https://lh3.googleusercontent.com/p/AF1QipN4MxzTqduyQNdvE85JMt3owi5PJ8dcmiFTBTZd=s680-w680-h510"></div>
+    <div class="swiper-slide"><img src="https://lh3.googleusercontent.com/p/AF1QipNIy8g4_gn6NpAg3JPVqS_dhqnbEYxPlo7xT8Mt=s680-w680-h510"></div>
+    <div class="swiper-slide"><img src="https://lh3.googleusercontent.com/p/AF1QipOP-NVt28ibtr0771eYepPAr-qHlsV58MQbL6yi=s680-w680-h510"></div>
+<div class="swiper-slide"><img src="https://lh3.googleusercontent.com/p/AF1QipNgcxw1sIGUjQ5x74qJVepyiJdXCsZuWLlMEiGu=s680-w680-h510"></div>
+<div class="swiper-slide"><img src="https://lh3.googleusercontent.com/p/AF1QipNH8ao6gL13QRxaJaxOGGLooOGn5aFXYA4Ct19E=s680-w680-h510"></div>
+<div class="swiper-slide"><img src="https://lh3.googleusercontent.com/p/AF1QipMY-COrCrQ6gQEVcdbtNVqcLeLzITlRNPTfdXJX=s680-w680-h510"></div>
+<div class="swiper-slide"><img src="https://lh3.googleusercontent.com/p/AF1QipPKfmAR9zDLS_PAe_8yZUQ_qHKEWVQk-aSW_Z6w=s680-w680-h510"></div>
+<div class="swiper-slide"><img src="https://lh3.googleusercontent.com/p/AF1QipPDt6QccrgYWRgJRxV4wiXY72jMTTl8N5ZvId4l=s680-w680-h510"></div>
+<div class="swiper-slide"><img src="https://lh3.googleusercontent.com/p/AF1QipPo5X93_cb3LNPXksROHKwa6IbC3ulGBZVrQ6Sh=s680-w680-h510"></div>
+<div class="swiper-slide"><img src="https://lh3.googleusercontent.com/p/AF1QipO6Gh34QZUYKuDap2Sj-fERPEWyq62y63-JOJ_w=s680-w680-h510"></div>
+<div class="swiper-slide"><img src="https://lh3.googleusercontent.com/p/AF1QipMqUas1jWDe9C_oTcJXiO50uye6ttGKWvnHG-yw=s680-w680-h510"></div>
+<div class="swiper-slide"><img src="https://lh3.googleusercontent.com/p/AF1QipMQtL9uD2JQH2MHG9tPXyWpo_ycAcEjs0hr8hbR=s680-w680-h510"></div>
+
+    ...
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+     const swiper = new Swiper('.swiper', {
+      autoplay: {
+        delay: 3000,
+        disableoninteraction: true,
+      },
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    
+  
+    });
+    </script>
+    
+  </body>
+</html>
+
+<div class="contact-container tile">
+  <img src="https://lh3.googleusercontent.com/p/AF1QipNPCoV8pgv_dL6OoWdc3UB1eT00fKJmirVL-mlf=s1360-w1360-h1020" alt="Contact Image" style="width:600px;">
+  <div>
+    <h2 class="title2">Contact Information</h2>
+   <p> <a href="tel:4234809990">(423)342-9990</a> </p>
+    </a>
+    <a href="mailto:monstermetalbuilding@gmail.com">Monstermetalbuilding@gmail.com</a>
+  </div>
+</div>
+
+<div class="contact-container tile">
+    <img src="https://lh3.googleusercontent.com/p/AF1QipMmydQOoEdA61WRaqg3whGU4jC36wccwLZmw2ui=s1360-w1360-h1020" style="width: 400px;">
+    <div>
+      <h2 class="title2">About Us</h2>
+      <p>Welcome to Monster Metal Building, a family-owned business with over 40 years of experience. We’ve grown from a small operation into a leading provider of metal buildings, maintaining our commitment to quality and customer satisfaction. Our skilled team delivers durable, functional, and aesthetically pleasing metal structures, from residential garages to commercial warehouses. As a multi-generational business, we value our customer relationships and treat every project as our own. Thank you for considering us for your building needs.</p>
+    </div>
+  </div>
+  <div class="footer">
+    <p>©2024 Monster Metal Buildings - See more on out Google listing</p>
+  </div>
+  
+</body>
+</html>
